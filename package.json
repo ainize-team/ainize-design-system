@@ -1,0 +1,10 @@
+{
+  "name": "ainize-design-system",
+  "version": "0.1.0",
+  "description": "Design system for Ainize",
+  "main": "index.js",
+  "repository": "git@github.com:ainize-team/ainize-design-system.git",
+  "author": "Yi Hyunjoon <yi.hyunjoon@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
