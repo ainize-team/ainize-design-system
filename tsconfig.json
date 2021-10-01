@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.tsx"],
+  "include": ["src/**/*.tsx", "src/index.ts"],
   "exclude": ["src/**/*.stories.tsx"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */

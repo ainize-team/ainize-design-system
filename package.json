@@ -27,5 +27,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@stitches/react": "^1.2.1"
+  }
 }
