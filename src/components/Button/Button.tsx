@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from '@stitches/react';
+import { styled } from '../../stitches.config';
 
 type ButtonTypes = 'primary' | 'secondary';
 
@@ -18,9 +18,9 @@ export const StyledButton = styled('button', {
   variants: {
     type: {
       primary: {
-        background: '#8B3EEB',
+        background: '$violet150',
         '&:hover': {
-          background: '#6D2AD8',
+          background: '$violet200',
         },
       },
       secondary: {
