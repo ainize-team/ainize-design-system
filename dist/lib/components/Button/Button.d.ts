@@ -11,6 +11,15 @@ export declare const StyledButton: import("@stitches/react/types/styled-componen
         violet150: string;
         violet200: string;
     };
+    fontSizes: {
+        0: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 export declare function Button({ label, type }: ButtonProps): React.ReactElement;
 export {};

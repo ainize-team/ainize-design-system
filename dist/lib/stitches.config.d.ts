@@ -6,6 +6,15 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         violet150: string;
         violet200: string;
     };
+    fontSizes: {
+        0: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(type: Type, ...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
         [x: string]: {
@@ -22,12 +31,30 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         violet150: string;
         violet200: string;
     };
+    fontSizes: {
+        0: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         violet150: string;
         violet200: string;
+    };
+    fontSizes: {
+        0: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -51,17 +78,44 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             violet150: string;
             violet200: string;
         };
+        fontSizes: {
+            0: string;
+            1: string;
+            2: string;
+            3: string;
+            4: string;
+            5: string;
+            6: string;
+        };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         violet150: string;
         violet200: string;
     };
+    fontSizes: {
+        0: string;
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{}, {
         colors: {
             violet150: string;
             violet200: string;
+        };
+        fontSizes: {
+            0: string;
+            1: string;
+            2: string;
+            3: string;
+            4: string;
+            5: string;
+            6: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 }) => {
@@ -75,10 +129,28 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         violet150: import("@stitches/react/types/theme").Token<"violet150", string, "colors", "">;
         violet200: import("@stitches/react/types/theme").Token<"violet200", string, "colors", "">;
     };
+    fontSizes: {
+        0: import("@stitches/react/types/theme").Token<"0", string, "fontSizes", "">;
+        1: import("@stitches/react/types/theme").Token<"1", string, "fontSizes", "">;
+        2: import("@stitches/react/types/theme").Token<"2", string, "fontSizes", "">;
+        3: import("@stitches/react/types/theme").Token<"3", string, "fontSizes", "">;
+        4: import("@stitches/react/types/theme").Token<"4", string, "fontSizes", "">;
+        5: import("@stitches/react/types/theme").Token<"5", string, "fontSizes", "">;
+        6: import("@stitches/react/types/theme").Token<"6", string, "fontSizes", "">;
+    };
 }, createTheme: <Argument0 extends string | ({
     colors?: {
         violet150?: string | number | boolean | undefined;
         violet200?: string | number | boolean | undefined;
+    } | undefined;
+    fontSizes?: {
+        0?: string | number | boolean | undefined;
+        1?: string | number | boolean | undefined;
+        2?: string | number | boolean | undefined;
+        3?: string | number | boolean | undefined;
+        4?: string | number | boolean | undefined;
+        5?: string | number | boolean | undefined;
+        6?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -89,6 +161,15 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     colors?: {
         violet150?: string | number | boolean | undefined;
         violet200?: string | number | boolean | undefined;
+    } | undefined;
+    fontSizes?: {
+        0?: string | number | boolean | undefined;
+        1?: string | number | boolean | undefined;
+        2?: string | number | boolean | undefined;
+        3?: string | number | boolean | undefined;
+        4?: string | number | boolean | undefined;
+        5?: string | number | boolean | undefined;
+        6?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -105,6 +186,15 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         colors: {
             violet150: string;
             violet200: string;
+        };
+        fontSizes: {
+            0: string;
+            1: string;
+            2: string;
+            3: string;
+            4: string;
+            5: string;
+            6: string;
         };
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;
