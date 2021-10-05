@@ -29,5 +29,11 @@
   },
   "dependencies": {
     "@stitches/react": "^1.2.1"
+  },
+  "files": [
+    "/dist/lib"
+  ],
+  "publishConfig": {
+    "@ainize-team:registry": "https://npm.pkg.github.com"
   }
 }
