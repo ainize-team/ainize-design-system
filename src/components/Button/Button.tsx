@@ -14,6 +14,7 @@ export const StyledButton = styled('button', {
   color: 'white',
   borderRadius: '4px',
   cursor: 'pointer',
+  fontFamily: '$roboto',
 
   variants: {
     type: {

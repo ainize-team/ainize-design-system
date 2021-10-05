@@ -15,6 +15,10 @@ export const {
       violet150: 'hsla(267, 81%, 58%, 1)',
       violet200: 'hsla(263, 69%, 51%, 1)',
     },
+    fonts: {
+      montserrat: 'Montserrat, -apple-system, system-ui, sans-serif',
+      roboto: 'Roboto, -apple-system, system-ui, sans-serif',
+    },
     fontSizes: {
       0: '12px',
       1: '14px',
