@@ -1,0 +1,38 @@
+import { Meta, Typeset } from '@storybook/addon-docs';
+import { config } from './stitches.config';
+
+<Meta title="Typography" />
+
+# Typography
+
+## Montserrat
+
+**Weights:** 400(regular), 500(medium), 700(bold)
+
+<Typeset
+  fontFamily={'Montserrat'}
+  fontSizes={[
+    config.theme.fontSizes[6],
+    config.theme.fontSizes[5],
+    config.theme.fontSizes[4],
+    config.theme.fontSizes[3],
+    config.theme.fontSizes[0],
+  ]}
+  fontWeight={'bold'}
+/>
+
+## Roboto
+
+**Weights:** 400(regular), 700(bold)
+
+<Typeset
+  fontFamily={'Roboto'}
+  fontSizes={[
+    config.theme.fontSizes[5],
+    config.theme.fontSizes[3],
+    config.theme.fontSizes[2],
+    config.theme.fontSizes[1],
+    config.theme.fontSizes[0],
+  ]}
+  fontWeight={'regular'}
+/>
