@@ -61,6 +61,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -81,6 +83,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         4: string;
         5: string;
         6: string;
+    };
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(type: Type, ...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -153,6 +160,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -174,7 +183,12 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         5: string;
         6: string;
     };
-}, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").ExoticComponent<any> | import("react").JSXElementConstructor<any> | {
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
+    };
+}, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
@@ -236,6 +250,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -257,7 +273,12 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         5: string;
         6: string;
     };
-}, import("@stitches/react/types/config").DefaultThemeMap, {}>>(...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ExoticComponent<any> | import("react").JSXElementConstructor<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
+    };
+}, import("@stitches/react/types/config").DefaultThemeMap, {}>>(...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
         [x: string]: {
             [x: string]: CSS;
@@ -334,6 +355,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray10: string;
             gray20: string;
             gray30: string;
+            'gray30-a4': string;
+            'gray30-a8': string;
             gray40: string;
             gray50: string;
             gray80: string;
@@ -354,6 +377,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             4: string;
             5: string;
             6: string;
+        };
+        fontWeights: {
+            regular: number;
+            medium: number;
+            bold: number;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{}, {
@@ -416,6 +444,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -436,6 +466,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         4: string;
         5: string;
         6: string;
+    };
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{}, {
@@ -498,6 +533,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray10: string;
             gray20: string;
             gray30: string;
+            'gray30-a4': string;
+            'gray30-a8': string;
             gray40: string;
             gray50: string;
             gray80: string;
@@ -518,6 +555,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             4: string;
             5: string;
             6: string;
+        };
+        fontWeights: {
+            regular: number;
+            medium: number;
+            bold: number;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 }) => {
@@ -586,6 +628,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10: import("@stitches/react/types/theme").Token<"gray10", string, "colors", "">;
         gray20: import("@stitches/react/types/theme").Token<"gray20", string, "colors", "">;
         gray30: import("@stitches/react/types/theme").Token<"gray30", string, "colors", "">;
+        'gray30-a4': import("@stitches/react/types/theme").Token<"gray30-a4", string, "colors", "">;
+        'gray30-a8': import("@stitches/react/types/theme").Token<"gray30-a8", string, "colors", "">;
         gray40: import("@stitches/react/types/theme").Token<"gray40", string, "colors", "">;
         gray50: import("@stitches/react/types/theme").Token<"gray50", string, "colors", "">;
         gray80: import("@stitches/react/types/theme").Token<"gray80", string, "colors", "">;
@@ -606,6 +650,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         4: import("@stitches/react/types/theme").Token<"4", string, "fontSizes", "">;
         5: import("@stitches/react/types/theme").Token<"5", string, "fontSizes", "">;
         6: import("@stitches/react/types/theme").Token<"6", string, "fontSizes", "">;
+    };
+    fontWeights: {
+        regular: import("@stitches/react/types/theme").Token<"regular", string, "fontWeights", "">;
+        medium: import("@stitches/react/types/theme").Token<"medium", string, "fontWeights", "">;
+        bold: import("@stitches/react/types/theme").Token<"bold", string, "fontWeights", "">;
     };
 }, createTheme: <Argument0 extends string | ({
     colors?: {
@@ -667,6 +716,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10?: string | number | boolean | undefined;
         gray20?: string | number | boolean | undefined;
         gray30?: string | number | boolean | undefined;
+        'gray30-a4'?: string | number | boolean | undefined;
+        'gray30-a8'?: string | number | boolean | undefined;
         gray40?: string | number | boolean | undefined;
         gray50?: string | number | boolean | undefined;
         gray80?: string | number | boolean | undefined;
@@ -687,6 +738,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         4?: string | number | boolean | undefined;
         5?: string | number | boolean | undefined;
         6?: string | number | boolean | undefined;
+    } | undefined;
+    fontWeights?: {
+        regular?: string | number | boolean | undefined;
+        medium?: string | number | boolean | undefined;
+        bold?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -753,6 +809,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray10?: string | number | boolean | undefined;
         gray20?: string | number | boolean | undefined;
         gray30?: string | number | boolean | undefined;
+        'gray30-a4'?: string | number | boolean | undefined;
+        'gray30-a8'?: string | number | boolean | undefined;
         gray40?: string | number | boolean | undefined;
         gray50?: string | number | boolean | undefined;
         gray80?: string | number | boolean | undefined;
@@ -773,6 +831,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         4?: string | number | boolean | undefined;
         5?: string | number | boolean | undefined;
         6?: string | number | boolean | undefined;
+    } | undefined;
+    fontWeights?: {
+        regular?: string | number | boolean | undefined;
+        medium?: string | number | boolean | undefined;
+        bold?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -845,6 +908,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray10: string;
             gray20: string;
             gray30: string;
+            'gray30-a4': string;
+            'gray30-a8': string;
             gray40: string;
             gray50: string;
             gray80: string;
@@ -865,6 +930,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             4: string;
             5: string;
             6: string;
+        };
+        fontWeights: {
+            regular: number;
+            medium: number;
+            bold: number;
         };
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;

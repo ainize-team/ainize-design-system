@@ -1,5 +1,7 @@
-export declare const Button: import("@stitches/react/types/styled-component").StyledComponent<"button", {
-    type?: "primary" | "secondary" | undefined;
+import React from 'react';
+declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
+    type?: "primary" | "secondary" | "outlined" | undefined;
+    size?: "medium" | "small" | "large" | undefined;
 }, {}, import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         text1: string;
@@ -60,6 +62,8 @@ export declare const Button: import("@stitches/react/types/styled-component").St
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -81,4 +85,16 @@ export declare const Button: import("@stitches/react/types/styled-component").St
         5: string;
         6: string;
     };
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
+declare type StyleButtonProps = React.ComponentProps<typeof StyledButton>;
+export declare type ButtonProps = StyleButtonProps & {
+    startIcon?: React.ReactElement;
+    endIcon?: React.ReactElement;
+};
+export declare function Button({ startIcon, endIcon, children, ...props }: ButtonProps): JSX.Element;
+export {};

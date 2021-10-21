@@ -2,30 +2,45 @@ import { styled } from '../../stitches.config';
 export var Text = styled('span', {
     variants: {
         size: {
-            6: {
+            jumbo: {
                 fontSize: '$6',
             },
-            5: {
+            h1: {
                 fontSize: '$5',
             },
-            4: {
+            h2: {
                 fontSize: '$4',
             },
-            3: {
+            h3: {
                 fontSize: '$3',
             },
-            2: {
+            h4: {
                 fontSize: '$2',
             },
-            1: {
+            basic: {
+                fontSize: '$2',
+            },
+            p: {
                 fontSize: '$1',
             },
-            0: {
+            label: {
                 fontSize: '$0',
+            },
+        },
+        weight: {
+            bold: {
+                fontWeight: '$bold',
+            },
+            medium: {
+                fontWeight: '$medium',
+            },
+            regular: {
+                fontWeight: '$regular',
             },
         },
     },
     defaultVariants: {
-        size: 2,
+        size: 'basic',
+        weight: 'regular',
     },
 });

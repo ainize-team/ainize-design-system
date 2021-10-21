@@ -1,5 +1,6 @@
 export declare const Text: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: 0 | "0" | "1" | "2" | "3" | "4" | "5" | "6" | 1 | 2 | 3 | 4 | 5 | 6 | undefined;
+    size?: "h1" | "h2" | "h3" | "h4" | "label" | "p" | "jumbo" | "basic" | undefined;
+    weight?: "regular" | "medium" | "bold" | undefined;
 }, {}, import("@stitches/react/types/css-util").CSS<{}, {
     colors: {
         text1: string;
@@ -60,6 +61,8 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         gray10: string;
         gray20: string;
         gray30: string;
+        'gray30-a4': string;
+        'gray30-a8': string;
         gray40: string;
         gray50: string;
         gray80: string;
@@ -80,5 +83,10 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         4: string;
         5: string;
         6: string;
+    };
+    fontWeights: {
+        regular: number;
+        medium: number;
+        bold: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
