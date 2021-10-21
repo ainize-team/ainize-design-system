@@ -81,7 +81,7 @@ export const {
       gray300: 'hsl(214, 9%, 15%)',
     },
     fonts: {
-      montserrat: 'Montserrat, -apple-system, system-ui, sans-serif',
+      montserrat: 'Montserrat, -apple-system, system-ui, serif',
       roboto: 'Roboto, -apple-system, system-ui, sans-serif',
     },
     fontSizes: {
@@ -92,6 +92,11 @@ export const {
       4: '1.5rem',
       5: '2rem',
       6: '3rem',
+    },
+    fontWeights: {
+      regular: 400,
+      medium: 500,
+      bold: 700,
     },
   },
 });

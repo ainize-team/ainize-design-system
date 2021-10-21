@@ -26,8 +26,20 @@ export const Text = styled('span', {
         fontSize: '$0',
       },
     },
+    weight: {
+      bold: {
+        fontWeight: '$bold',
+      },
+      medium: {
+        fontWeight: '$medium',
+      },
+      regular: {
+        fontWeight: '$regular',
+      },
+    },
   },
   defaultVariants: {
     size: 2,
+    weight: 'regular',
   },
 });

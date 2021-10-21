@@ -11,7 +11,9 @@ export default {
 const Template: Story = (args) => <Text {...args} />;
 
 export const Jumbo = () => (
-  <Text size={6}>Lorem, ipsum dolor sit amet consectetur</Text>
+  <Text size={6} weight="bold">
+    Lorem, ipsum dolor sit amet consectetur
+  </Text>
 );
 
 export const H1 = () => (
@@ -32,8 +34,12 @@ H3.storyName = 'h3 Title';
 export const BasicText = () => (
   <Text size={2}>Lorem, ipsum dolor sit amet consectetur</Text>
 );
-H3.storyName = 'Basic Text';
+BasicText.storyName = 'Basic Text';
 
 export const Paragraph = () => (
   <Text size={1}>Lorem, ipsum dolor sit amet consectetur</Text>
+);
+
+export const Label = () => (
+  <Text size={0}>Lorem, ipsum dolor sit amet consectetur</Text>
 );
