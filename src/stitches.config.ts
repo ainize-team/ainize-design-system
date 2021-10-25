@@ -99,4 +99,7 @@ export const {
       bold: 700,
     },
   },
+  media: {
+    bp1: '(min-width: 840px)',
+  },
 });
