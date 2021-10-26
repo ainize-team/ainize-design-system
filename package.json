@@ -30,7 +30,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@stitches/react": "^1.2.1"
+    "@stitches/react": "^1.2.1",
+    "react-select": "^5.1.0"
   },
   "files": [
     "/dist/lib"
