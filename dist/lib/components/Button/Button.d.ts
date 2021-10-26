@@ -2,7 +2,11 @@ import React from 'react';
 declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
     type?: "primary" | "secondary" | "outlined" | undefined;
     size?: "medium" | "small" | "large" | undefined;
-}, {}, import("@stitches/react/types/css-util").CSS<{}, {
+}, {
+    bp1: "(min-width: 840px)";
+}, import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;

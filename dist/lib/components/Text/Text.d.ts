@@ -1,7 +1,11 @@
 export declare const Text: import("@stitches/react/types/styled-component").StyledComponent<"span", {
     size?: "h1" | "h2" | "h3" | "h4" | "label" | "p" | "jumbo" | "basic" | undefined;
     weight?: "regular" | "medium" | "bold" | undefined;
-}, {}, import("@stitches/react/types/css-util").CSS<{}, {
+}, {
+    bp1: "(min-width: 840px)";
+}, import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;

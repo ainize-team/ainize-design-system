@@ -31,6 +31,7 @@ var StyledButton = styled('button', {
     cursor: 'pointer',
     fontFamily: '$roboto',
     fontWeight: '500',
+    alignItems: 'center',
     variants: {
         type: {
             primary: {

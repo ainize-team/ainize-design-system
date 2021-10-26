@@ -90,4 +90,7 @@ export var styled = (_a = createStitches({
             bold: 700,
         },
     },
+    media: {
+        bp1: '(min-width: 840px)',
+    },
 }), _a.styled), css = _a.css, globalCss = _a.globalCss, keyframes = _a.keyframes, getCssText = _a.getCssText, theme = _a.theme, createTheme = _a.createTheme, config = _a.config;

@@ -1,7 +1,9 @@
 /// <reference types="react" />
 export declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
     [name: string]: unknown;
-})[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
+})[], CSS = import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;
@@ -100,7 +102,11 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         css: CSS;
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
-} & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {}, import("@stitches/react/types/css-util").CSS<{}, {
+} & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
+    bp1: "(min-width: 840px)";
+}, import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;
@@ -190,7 +196,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> | {
     [name: string]: unknown;
-})[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
+})[], CSS = import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;
@@ -289,13 +297,17 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         css: CSS;
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
-} & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {}, CSS>, globalCss: <Styles extends {
+} & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
+    bp1: "(min-width: 840px)";
+}, CSS>, globalCss: <Styles extends {
     [K: string]: any;
 }>(...styles: ({
     '@import'?: unknown;
     '@font-face'?: unknown;
 } & { [K in keyof Styles]: K extends "@import" ? string | string[] : K extends "@font-face" ? import("@stitches/react/types/css").AtRule.FontFace | import("@stitches/react/types/css").AtRule.FontFace[] : K extends `@keyframes ${string}` ? {
-    [x: string]: import("@stitches/react/types/css-util").CSS<{}, {
+    [x: string]: import("@stitches/react/types/css-util").CSS<{
+        bp1: "(min-width: 840px)";
+    }, {
         colors: {
             text1: string;
             text2: string;
@@ -384,7 +396,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             bold: number;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
-} : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{}, {
+} : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
+    bp1: "(min-width: 840px)";
+}, {
     colors: {
         text1: string;
         text2: string;
@@ -473,7 +487,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         bold: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>; })[]) => () => string, keyframes: (style: {
-    [offset: string]: import("@stitches/react/types/css-util").CSS<{}, {
+    [offset: string]: import("@stitches/react/types/css-util").CSS<{
+        bp1: "(min-width: 840px)";
+    }, {
         colors: {
             text1: string;
             text2: string;
@@ -847,7 +863,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     selector: string;
 } & (Argument0 extends string ? import("@stitches/react/types/stitches").ThemeTokens<Argument1, ""> : import("@stitches/react/types/stitches").ThemeTokens<Argument0, "">), config: {
     prefix: "";
-    media: {};
+    media: {
+        bp1: "(min-width: 840px)";
+    };
     theme: {
         colors: {
             text1: string;
