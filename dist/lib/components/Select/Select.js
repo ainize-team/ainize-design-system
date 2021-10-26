@@ -37,7 +37,7 @@ var customStyles = {
             backgroundColor: 'hsla(214, 12%, 89%, .8)',
         }, '&:clicked': {
             backgroundColor: 'hsla(214, 12%, 89%, .8)',
-        }, color: 'hsl(208, 6%, 54%)' })); },
+        }, color: '#4A5057' })); },
     valueContainer: function (provided, state) { return (__assign(__assign({}, provided), { height: state.selectProps.size === 'small' ? '20px' : '24px', padding: 'unset' })); },
     singleValue: function (provided, state) { return (__assign(__assign({}, provided), { fontFamily: 'roboto, sans-serif', color: 'hsl(208, 6%, 54%)', margin: 'unset', fontSize: state.selectProps.size === 'small' ? '0.75rem' : '1rem', lineHeight: state.selectProps.size === 'small' ? '16px' : '24px' })); },
     dropdownIndicator: function () { return ({

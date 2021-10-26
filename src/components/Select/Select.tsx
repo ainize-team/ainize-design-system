@@ -55,7 +55,7 @@ const customStyles = {
       '&:clicked': {
       backgroundColor: 'hsla(214, 12%, 89%, .8)',
     },
-    color: 'hsl(208, 6%, 54%)',
+    color: '#4A5057',
   }),
   valueContainer: (provided: any, state: any) => ({
     ...provided,
