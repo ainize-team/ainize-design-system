@@ -84,12 +84,12 @@ const customStyles = {
   })
 };
 
-interface Option {
+export interface Option {
   label: string;
   value: string;
 }
 
-interface SelectProps {
+export interface SelectProps {
   options: Array<Option>;
   size: 'small' | 'medium';
   width: string;
@@ -97,9 +97,7 @@ interface SelectProps {
   disabled?: boolean;
 }
 
-// export function Select({...props}: StyleSelectProps) {
 export function Select({ options, size, width, isError, disabled }: SelectProps) {
-
   return (
     <ReactSelect
       isSearchable={false}  // @ts-ignore
@@ -109,6 +107,6 @@ export function Select({ options, size, width, isError, disabled }: SelectProps)
       isDisabled={disabled}
       size={size}
       options={options}
-      defaultValue={options[0]}
+      defaultValue={options?.length > 1 && options[0]}
     />)
 }
