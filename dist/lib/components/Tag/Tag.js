@@ -54,8 +54,8 @@ var StyledPrimaryTag = styled(Tag, {
                 color: '$violet200',
             },
             gray: {
-                backgroundColor: '$text3',
-                color: '$gray200',
+                backgroundColor: '$gray10',
+                color: '$text2',
             },
         },
     },
