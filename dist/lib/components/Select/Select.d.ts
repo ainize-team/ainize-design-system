@@ -1,9 +1,9 @@
 /// <reference types="react" />
-interface Option {
+export interface Option {
     label: string;
     value: string;
 }
-interface SelectProps {
+export interface SelectProps {
     options: Array<Option>;
     size: 'small' | 'medium';
     width: string;
@@ -11,4 +11,3 @@ interface SelectProps {
     disabled?: boolean;
 }
 export declare function Select({ options, size, width, isError, disabled }: SelectProps): JSX.Element;
-export {};

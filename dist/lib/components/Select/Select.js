@@ -53,8 +53,7 @@ var customStyles = {
         display: 'none',
     }); }
 };
-// export function Select({...props}: StyleSelectProps) {
 export function Select(_a) {
     var options = _a.options, size = _a.size, width = _a.width, isError = _a.isError, disabled = _a.disabled;
-    return (React.createElement(ReactSelect, { isSearchable: false, styles: customStyles, width: width, isError: isError, isDisabled: disabled, size: size, options: options, defaultValue: options[0] }));
+    return (React.createElement(ReactSelect, { isSearchable: false, styles: customStyles, width: width, isError: isError, isDisabled: disabled, size: size, options: options, defaultValue: (options === null || options === void 0 ? void 0 : options.length) > 1 && options[0] }));
 }
