@@ -31,6 +31,7 @@ var Tag = styled('div', {
     fontFamily: '$roboto',
     fontWeight: '$regular',
     fontSize: '$0',
+    lineHeight: 1.5,
     alignItems: 'center',
     variants: {
         size: {
