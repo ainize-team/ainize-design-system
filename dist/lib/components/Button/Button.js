@@ -39,6 +39,10 @@ var StyledButton = styled('button', {
                 '&:hover': {
                     background: '$violet200',
                 },
+                '&:disabled': {
+                    opacity: 0.3,
+                    background: '$violet150',
+                },
             },
             secondary: {
                 color: '$text2',
@@ -47,6 +51,10 @@ var StyledButton = styled('button', {
                     color: '$text1',
                     background: '$gray30-a8',
                 },
+                '&:disabled': {
+                    background: '$gray30-a4',
+                    opacity: 0.3,
+                }
             },
             outlined: {
                 color: '$text2',
@@ -55,6 +63,11 @@ var StyledButton = styled('button', {
                     color: '$violet150',
                     borderColor: '$violet100',
                 },
+                '&:disabled,[disabled]': {
+                    opacity: 0.3,
+                    borderColor: '$gray50',
+                    color: '$text2',
+                }
             },
         },
         size: {

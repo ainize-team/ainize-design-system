@@ -11,9 +11,15 @@ export default {
 
 export const Primary = () => <Button>Primary</Button>;
 
+export const PrimaryDisabled = () => <Button disabled>Primary</Button>;
+
 export const Secondary = () => <Button type="secondary">Secondary</Button>;
 
+export const SecondaryDisabled = () => <Button type="secondary" disabled>Secondary</Button>;
+
 export const Outlined = () => <Button type="outlined">Outlined</Button>;
+
+export const OutlinedDisabled = () => <Button type="outlined" disabled>Outlined</Button>;
 
 export const Medium = () => <Button size="medium">Medium</Button>;
 
