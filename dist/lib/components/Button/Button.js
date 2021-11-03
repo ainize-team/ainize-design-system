@@ -32,6 +32,7 @@ var StyledButton = styled('button', {
     fontFamily: '$roboto',
     fontWeight: 500,
     alignItems: 'center',
+    justifyContent: 'center',
     boxSizing: 'border-box',
     variants: {
         type: {
