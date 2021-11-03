@@ -4,13 +4,14 @@ import { styled } from '../../stitches.config';
 const StyledButton = styled('button', {
   all: 'unset',
   display: 'inline-flex',
-  gap: '8px',
-  color: 'white',
-  borderRadius: '4px',
+  gap: 8,
+  color: '$white',
+  borderRadius: 4,
   cursor: 'pointer',
   fontFamily: '$roboto',
-  fontWeight: '500',
+  fontWeight: 500,
   alignItems: 'center',
+  boxSizing: 'border-box',
 
   variants: {
     type: {
