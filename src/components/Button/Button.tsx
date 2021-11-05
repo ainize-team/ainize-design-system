@@ -21,23 +21,14 @@ const StyledButton = styled('button', {
         '&:hover': {
           background: '$violet200',
         },
-        '&:disabled': {
-          opacity: 0.3,
-          background: '$violet150',
-        },
       },
       secondary: {
         color: '$text2',
         background: '$gray30-a4',
-
         '&:hover': {
           color: '$text1',
           background: '$gray30-a8',
         },
-        '&:disabled': {
-          background: '$gray30-a4',
-          opacity: 0.3,
-        }
       },
       outlined: {
         color: '$text2',
@@ -47,10 +38,15 @@ const StyledButton = styled('button', {
           borderColor: '$violet100',
         },
         '&:disabled,[disabled]': {
-          opacity: 0.3,
           borderColor: '$gray50',
           color: '$text2',
-        }
+        },
+      },
+    },
+    disabled: {
+      true: {
+        cursor: 'not-allowed',
+        opacity: 0.3,
       },
     },
     size: {
@@ -71,6 +67,7 @@ const StyledButton = styled('button', {
   defaultVariants: {
     type: 'primary',
     size: 'large',
+    disabled: false,
   },
 });
 
@@ -79,6 +76,7 @@ type StyleButtonProps = React.ComponentProps<typeof StyledButton>;
 export type ButtonProps = StyleButtonProps & {
   startIcon?: React.ReactElement;
   endIcon?: React.ReactElement;
+  disabled?: boolean;
 };
 
 export function Button({
