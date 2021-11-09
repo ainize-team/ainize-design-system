@@ -10,6 +10,7 @@ export const {
   createTheme,
   config,
 } = createStitches({
+  prefix: 'ainize',
   theme: {
     colors: {
       text1: 'hsl(212, 8%, 32%)',
