@@ -11,7 +11,6 @@ export const Text = styled('span', {
       h1: {
         fontSize: '$5',
         lineHeight: '40px',
-
       },
       h2: {
         fontSize: '$4',
@@ -49,9 +48,21 @@ export const Text = styled('span', {
         fontWeight: '$regular',
       },
     },
+    color: {
+      1: {
+        color: '$text1',
+      },
+      2: {
+        color: '$text2',
+      },
+      3: {
+        color: '$text3',
+      },
+    },
   },
   defaultVariants: {
     size: 'basic',
     weight: 'regular',
+    color: 1,
   },
 });
