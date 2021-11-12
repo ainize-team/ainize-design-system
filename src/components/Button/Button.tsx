@@ -52,14 +52,17 @@ const StyledButton = styled('button', {
     size: {
       large: {
         fontSize: '$2',
+        lineHeight: '24px',
         padding: '12px 20px',
       },
       medium: {
         fontSize: '$1',
+        lineHeight: '24px',
         padding: '8px 12px',
       },
       small: {
         fontSize: '$0',
+        lineHeight: '16px',
         padding: '6px 8px',
       },
     },
