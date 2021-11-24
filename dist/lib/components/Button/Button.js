@@ -41,10 +41,6 @@ var StyledButton = styled('button', {
                 '&:hover': {
                     background: '$violet200',
                 },
-                '&:disabled': {
-                    opacity: 0.3,
-                    background: '$violet150',
-                },
             },
             secondary: {
                 color: '$text2',
@@ -53,10 +49,6 @@ var StyledButton = styled('button', {
                     color: '$text1',
                     background: '$gray30-a8',
                 },
-                '&:disabled': {
-                    background: '$gray30-a4',
-                    opacity: 0.3,
-                }
             },
             outlined: {
                 color: '$text2',
@@ -66,23 +58,31 @@ var StyledButton = styled('button', {
                     borderColor: '$violet100',
                 },
                 '&:disabled,[disabled]': {
-                    opacity: 0.3,
                     borderColor: '$gray50',
                     color: '$text2',
-                }
+                },
+            },
+        },
+        disabled: {
+            true: {
+                cursor: 'not-allowed',
+                opacity: 0.3,
             },
         },
         size: {
             large: {
                 fontSize: '$2',
+                lineHeight: '24px',
                 padding: '12px 20px',
             },
             medium: {
                 fontSize: '$1',
+                lineHeight: '24px',
                 padding: '8px 12px',
             },
             small: {
                 fontSize: '$0',
+                lineHeight: '16px',
                 padding: '6px 8px',
             },
         },
@@ -90,6 +90,7 @@ var StyledButton = styled('button', {
     defaultVariants: {
         type: 'primary',
         size: 'large',
+        disabled: false,
     },
 });
 export function Button(_a) {

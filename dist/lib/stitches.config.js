@@ -1,6 +1,7 @@
 var _a;
 import { createStitches } from '@stitches/react';
 export var styled = (_a = createStitches({
+    prefix: 'ainize',
     theme: {
         colors: {
             text1: 'hsl(212, 8%, 32%)',
