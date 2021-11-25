@@ -80,13 +80,14 @@ declare const StyledPrimaryTag: import("@stitches/react/types/styled-component")
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -174,13 +175,14 @@ declare const StyledPrimaryTag: import("@stitches/react/types/styled-component")
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -275,13 +277,14 @@ declare const StyledOutlinedTag: import("@stitches/react/types/styled-component"
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -369,13 +372,14 @@ declare const StyledOutlinedTag: import("@stitches/react/types/styled-component"
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
