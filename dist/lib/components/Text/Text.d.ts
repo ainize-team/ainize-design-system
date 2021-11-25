@@ -1,6 +1,7 @@
 export declare const Text: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: "h1" | "h2" | "h3" | "h4" | "label" | "p" | "jumbo" | "basic" | undefined;
+    size?: "label" | "p" | "basic" | "h4" | "h3" | "h2" | "h1" | "jumbo" | undefined;
     weight?: "regular" | "medium" | "bold" | undefined;
+    color?: 1 | "1" | "2" | "3" | 2 | 3 | undefined;
 }, {
     bp1: "(min-width: 840px)";
 }, import("@stitches/react/types/css-util").CSS<{
@@ -80,13 +81,14 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;

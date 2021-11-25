@@ -35,12 +35,12 @@ const StyledInput = styled('input', {
     size: {
       medium: {
         padding: '8px 12px',
-        fontSize: '$2',
+        fontSize: '$basic',
         lineHeight: 1.5,
       },
       small: {
         padding: '6px 8px',
-        fontSize: '$0',
+        fontSize: '$label',
         lineHeight: '16px',
       },
     },

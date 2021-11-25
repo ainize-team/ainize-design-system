@@ -3,35 +3,35 @@ export var Text = styled('span', {
     variants: {
         size: {
             jumbo: {
-                fontSize: '$6',
+                fontSize: '$jumbo',
                 lineHeight: '64px',
             },
             h1: {
-                fontSize: '$5',
+                fontSize: '$h1',
                 lineHeight: '40px',
             },
             h2: {
-                fontSize: '$4',
+                fontSize: '$h2',
                 lineHeight: '32px',
             },
             h3: {
-                fontSize: '$3',
+                fontSize: '$h3',
                 lineHeight: '28px',
             },
             h4: {
-                fontSize: '$2',
+                fontSize: '$h4',
                 lineHeight: '20px',
             },
             basic: {
-                fontSize: '$2',
+                fontSize: '$basic',
                 lineHeight: '24px',
             },
             p: {
-                fontSize: '$1',
+                fontSize: '$p',
                 lineHeight: '20px',
             },
             label: {
-                fontSize: '$0',
+                fontSize: '$label',
                 lineHeight: '16px',
             },
         },
@@ -46,9 +46,21 @@ export var Text = styled('span', {
                 fontWeight: '$regular',
             },
         },
+        color: {
+            1: {
+                color: '$text1',
+            },
+            2: {
+                color: '$text2',
+            },
+            3: {
+                color: '$text3',
+            },
+        },
     },
     defaultVariants: {
         size: 'basic',
         weight: 'regular',
+        color: 1,
     },
 });

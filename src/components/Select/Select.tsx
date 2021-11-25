@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactSelect from 'react-select';
+import { config } from "../../stitches.config";
 
 const customStyles = {
   container: (provided: any, state: any) => ({
@@ -41,10 +42,10 @@ const customStyles = {
     height: state.selectProps.size === 'small' ? '28px' : '40px',
     fontFamily: 'roboto, sans-serif',
     ...(state.selectProps.size === 'small' ? {
-      fontSize: '0.75rem',
+      fontSize: config.theme.fontSizes.label,
       lineHeight: '16px',
     } : {
-      fontSize: '1rem',
+      fontSize: config.theme.fontSizes.basic,
       lineHeight: '24px',
     }),
     backgroundColor: state.isFocused ? 'hsla(214, 12%, 89%, .8)' : state.isSelected ? 'hsla(214, 12%, 89%, .4)' : 'white',
@@ -67,7 +68,7 @@ const customStyles = {
     fontFamily: 'roboto, sans-serif',
     color: 'hsl(208, 6%, 54%)',
     margin: 'unset',
-    fontSize: state.selectProps.size === 'small' ? '0.75rem' : '1rem',
+    fontSize: state.selectProps.size === 'small' ? config.theme.fontSizes.label : config.theme.fontSizes.basic,
     lineHeight: state.selectProps.size === 'small' ? '16px' : '24px',
   }),
   dropdownIndicator: () => ({

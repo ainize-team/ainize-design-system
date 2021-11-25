@@ -78,13 +78,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -181,13 +182,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -273,13 +275,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -382,13 +385,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             roboto: string;
         };
         fontSizes: {
-            0: string;
-            1: string;
-            2: string;
-            3: string;
-            4: string;
-            5: string;
-            6: string;
+            label: string;
+            p: string;
+            basic: string;
+            h4: string;
+            h3: string;
+            h2: string;
+            h1: string;
+            jumbo: string;
         };
         fontWeights: {
             regular: number;
@@ -473,13 +477,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto: string;
     };
     fontSizes: {
-        0: string;
-        1: string;
-        2: string;
-        3: string;
-        4: string;
-        5: string;
-        6: string;
+        label: string;
+        p: string;
+        basic: string;
+        h4: string;
+        h3: string;
+        h2: string;
+        h1: string;
+        jumbo: string;
     };
     fontWeights: {
         regular: number;
@@ -564,13 +569,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             roboto: string;
         };
         fontSizes: {
-            0: string;
-            1: string;
-            2: string;
-            3: string;
-            4: string;
-            5: string;
-            6: string;
+            label: string;
+            p: string;
+            basic: string;
+            h4: string;
+            h3: string;
+            h2: string;
+            h1: string;
+            jumbo: string;
         };
         fontWeights: {
             regular: number;
@@ -659,13 +665,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto: import("@stitches/react/types/theme").Token<"roboto", string, "fonts", "ainize">;
     };
     fontSizes: {
-        0: import("@stitches/react/types/theme").Token<"0", string, "fontSizes", "ainize">;
-        1: import("@stitches/react/types/theme").Token<"1", string, "fontSizes", "ainize">;
-        2: import("@stitches/react/types/theme").Token<"2", string, "fontSizes", "ainize">;
-        3: import("@stitches/react/types/theme").Token<"3", string, "fontSizes", "ainize">;
-        4: import("@stitches/react/types/theme").Token<"4", string, "fontSizes", "ainize">;
-        5: import("@stitches/react/types/theme").Token<"5", string, "fontSizes", "ainize">;
-        6: import("@stitches/react/types/theme").Token<"6", string, "fontSizes", "ainize">;
+        label: import("@stitches/react/types/theme").Token<"label", string, "fontSizes", "ainize">;
+        p: import("@stitches/react/types/theme").Token<"p", string, "fontSizes", "ainize">;
+        basic: import("@stitches/react/types/theme").Token<"basic", string, "fontSizes", "ainize">;
+        h4: import("@stitches/react/types/theme").Token<"h4", string, "fontSizes", "ainize">;
+        h3: import("@stitches/react/types/theme").Token<"h3", string, "fontSizes", "ainize">;
+        h2: import("@stitches/react/types/theme").Token<"h2", string, "fontSizes", "ainize">;
+        h1: import("@stitches/react/types/theme").Token<"h1", string, "fontSizes", "ainize">;
+        jumbo: import("@stitches/react/types/theme").Token<"jumbo", string, "fontSizes", "ainize">;
     };
     fontWeights: {
         regular: import("@stitches/react/types/theme").Token<"regular", string, "fontWeights", "ainize">;
@@ -747,13 +754,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto?: string | number | boolean | undefined;
     } | undefined;
     fontSizes?: {
-        0?: string | number | boolean | undefined;
-        1?: string | number | boolean | undefined;
-        2?: string | number | boolean | undefined;
-        3?: string | number | boolean | undefined;
-        4?: string | number | boolean | undefined;
-        5?: string | number | boolean | undefined;
-        6?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        jumbo?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         regular?: string | number | boolean | undefined;
@@ -840,13 +848,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         roboto?: string | number | boolean | undefined;
     } | undefined;
     fontSizes?: {
-        0?: string | number | boolean | undefined;
-        1?: string | number | boolean | undefined;
-        2?: string | number | boolean | undefined;
-        3?: string | number | boolean | undefined;
-        4?: string | number | boolean | undefined;
-        5?: string | number | boolean | undefined;
-        6?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        jumbo?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         regular?: string | number | boolean | undefined;
@@ -941,13 +950,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             roboto: string;
         };
         fontSizes: {
-            0: string;
-            1: string;
-            2: string;
-            3: string;
-            4: string;
-            5: string;
-            6: string;
+            label: string;
+            p: string;
+            basic: string;
+            h4: string;
+            h3: string;
+            h2: string;
+            h1: string;
+            jumbo: string;
         };
         fontWeights: {
             regular: number;

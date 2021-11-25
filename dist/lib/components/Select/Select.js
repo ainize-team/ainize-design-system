@@ -11,6 +11,7 @@ var __assign = (this && this.__assign) || function () {
 };
 import React from 'react';
 import ReactSelect from 'react-select';
+import { config } from "../../stitches.config";
 var customStyles = {
     container: function (provided, state) { return (__assign(__assign({}, provided), { width: state.selectProps.width, minHeight: 'unset', height: state.selectProps.size === 'small' ? '28px' : '40px' })); },
     control: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { minHeight: 'unset', height: 'inherit' }), (state.selectProps.size === 'small' ? {
@@ -27,10 +28,10 @@ var customStyles = {
         height: '24px',
     }))); },
     option: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { display: 'flex', alignItems: 'center', height: state.selectProps.size === 'small' ? '28px' : '40px', fontFamily: 'roboto, sans-serif' }), (state.selectProps.size === 'small' ? {
-        fontSize: '0.75rem',
+        fontSize: config.theme.fontSizes.label,
         lineHeight: '16px',
     } : {
-        fontSize: '1rem',
+        fontSize: config.theme.fontSizes.basic,
         lineHeight: '24px',
     })), { backgroundColor: state.isFocused ? 'hsla(214, 12%, 89%, .8)' : state.isSelected ? 'hsla(214, 12%, 89%, .4)' : 'white', '&:hover': {
             cursor: 'pointer',
@@ -39,7 +40,7 @@ var customStyles = {
             backgroundColor: 'hsla(214, 12%, 89%, .8)',
         }, color: '#4A5057' })); },
     valueContainer: function (provided, state) { return (__assign(__assign({}, provided), { height: state.selectProps.size === 'small' ? '20px' : '24px', padding: 'unset' })); },
-    singleValue: function (provided, state) { return (__assign(__assign({}, provided), { fontFamily: 'roboto, sans-serif', color: 'hsl(208, 6%, 54%)', margin: 'unset', fontSize: state.selectProps.size === 'small' ? '0.75rem' : '1rem', lineHeight: state.selectProps.size === 'small' ? '16px' : '24px' })); },
+    singleValue: function (provided, state) { return (__assign(__assign({}, provided), { fontFamily: 'roboto, sans-serif', color: 'hsl(208, 6%, 54%)', margin: 'unset', fontSize: state.selectProps.size === 'small' ? config.theme.fontSizes.label : config.theme.fontSizes.basic, lineHeight: state.selectProps.size === 'small' ? '16px' : '24px' })); },
     dropdownIndicator: function () { return ({
         all: 'unset',
         display: 'flex',
