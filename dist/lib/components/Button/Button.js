@@ -38,24 +38,30 @@ var StyledButton = styled('button', {
         type: {
             primary: {
                 background: '$violet150',
+                transition: 'all 0.2s ease-in-out',
                 '&:hover': {
                     background: '$violet200',
+                    transition: 'all 0.2s ease-in-out',
                 },
             },
             secondary: {
                 color: '$text2',
                 background: '$gray30-a4',
+                transition: 'all 0.2s ease-in-out',
                 '&:hover': {
                     color: '$text1',
                     background: '$gray30-a8',
+                    transition: 'all 0.2s ease-in-out',
                 },
             },
             outlined: {
                 color: '$text2',
                 border: '1px solid $gray50',
+                transition: 'all 0.2s ease-in-out',
                 '&:hover': {
                     color: '$violet150',
                     borderColor: '$violet100',
+                    transition: 'all 0.2s ease-in-out',
                 },
                 '&:disabled,[disabled]': {
                     borderColor: '$gray50',
