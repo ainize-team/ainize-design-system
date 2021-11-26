@@ -1,7 +1,8 @@
 import React from 'react';
 import { styled } from '../../stitches.config';
+import { Eye } from 'react-feather';
 
-const StyledInput = styled('input', {
+const StyledInput = styled('textarea', {
   fontFamily: '$roboto',
   outline: 'none',
   boxSizing: 'border-box',
@@ -9,6 +10,8 @@ const StyledInput = styled('input', {
   border: '2px solid $line',
   color: '$text1',
   width: '100%',
+  height: 'auto',
+  resize: 'none',
 
   '&:focus': {
     border: '2px solid $violet100',
@@ -44,6 +47,11 @@ const StyledInput = styled('input', {
         lineHeight: '16px',
       },
     },
+    multiLine:{
+      true:{
+        height: '200px',
+      },
+    }
   },
   defaultVariants: {
     size: 'medium',
@@ -53,11 +61,12 @@ type StyledInputProps = React.ComponentProps<typeof StyledInput>;
 
 export type InputProps = StyledInputProps & {
   size: string;
+  multiLine?: boolean;
 }
 
 export const Input = ({ size, ...props }: InputProps) => {
   // eslint-disable-next-line react/jsx-props-no-spreading
-  return <StyledInput {...props} size={size} />;
+  return <StyledInput {...props} size={size} rows={1}/>;
 };
 
 export default Input;

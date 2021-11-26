@@ -28,3 +28,7 @@ export const MediumWithDanger = () => (
 export const Disabled = () => (
   <Input size="small" disabled defaultValue='Lorem, ipsum dolor sit amet consectetur' />
 );
+
+export const MultiLine = () => (
+  <Input size="medium" multiLine defaultValue='Lorem, ipsum dolor sit amet consectetur' />
+);
