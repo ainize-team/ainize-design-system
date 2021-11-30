@@ -100,6 +100,9 @@ export const {
       medium: 500,
       bold: 700,
     },
+    transitions: {
+      button : 'all 0.2s ease-in-out',
+    }
   },
   media: {
     bp1: '(min-width: 840px)',
