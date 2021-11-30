@@ -96,6 +96,9 @@ declare const StyledButton: import("@stitches/react/types/styled-component").Sty
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 declare type StyleButtonProps = React.ComponentProps<typeof StyledButton>;
 export declare type ButtonProps = StyleButtonProps & {

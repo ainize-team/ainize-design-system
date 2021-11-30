@@ -95,6 +95,9 @@ declare const StyledInput: import("@stitches/react/types/styled-component").Styl
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 declare type StyledInputProps = React.ComponentProps<typeof StyledInput>;
 export declare type InputProps = StyledInputProps & {

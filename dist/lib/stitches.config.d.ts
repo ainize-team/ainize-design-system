@@ -92,6 +92,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(type: Type, ...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
         [x: string]: {
@@ -196,6 +199,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
@@ -288,6 +294,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         regular: number;
         medium: number;
         bold: number;
+    };
+    transitions: {
+        button: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -399,6 +408,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             medium: number;
             bold: number;
         };
+        transitions: {
+            button: string;
+        };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
     bp1: "(min-width: 840px)";
@@ -491,6 +503,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{
         bp1: "(min-width: 840px)";
@@ -582,6 +597,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             regular: number;
             medium: number;
             bold: number;
+        };
+        transitions: {
+            button: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 }) => {
@@ -679,6 +697,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         medium: import("@stitches/react/types/theme").Token<"medium", string, "fontWeights", "ainize">;
         bold: import("@stitches/react/types/theme").Token<"bold", string, "fontWeights", "ainize">;
     };
+    transitions: {
+        button: import("@stitches/react/types/theme").Token<"button", string, "transitions", "ainize">;
+    };
 }, createTheme: <Argument0 extends string | ({
     colors?: {
         text1?: string | number | boolean | undefined;
@@ -767,6 +788,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         regular?: string | number | boolean | undefined;
         medium?: string | number | boolean | undefined;
         bold?: string | number | boolean | undefined;
+    } | undefined;
+    transitions?: {
+        button?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -861,6 +885,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         regular?: string | number | boolean | undefined;
         medium?: string | number | boolean | undefined;
         bold?: string | number | boolean | undefined;
+    } | undefined;
+    transitions?: {
+        button?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -963,6 +990,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             regular: number;
             medium: number;
             bold: number;
+        };
+        transitions: {
+            button: string;
         };
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;

@@ -94,6 +94,9 @@ declare const StyledPrimaryTag: import("@stitches/react/types/styled-component")
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, {
     color?: "gray" | "violet" | undefined;
 }, {
@@ -188,6 +191,9 @@ declare const StyledPrimaryTag: import("@stitches/react/types/styled-component")
         regular: number;
         medium: number;
         bold: number;
+    };
+    transitions: {
+        button: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 declare type StylePrimaryTagProps = React.ComponentProps<typeof StyledPrimaryTag>;
@@ -291,6 +297,9 @@ declare const StyledOutlinedTag: import("@stitches/react/types/styled-component"
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, {
     color?: "gray" | "violet" | undefined;
 }, {
@@ -385,6 +394,9 @@ declare const StyledOutlinedTag: import("@stitches/react/types/styled-component"
         regular: number;
         medium: number;
         bold: number;
+    };
+    transitions: {
+        button: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 declare type StyleOutlinedTagProps = React.ComponentProps<typeof StyledOutlinedTag>;
