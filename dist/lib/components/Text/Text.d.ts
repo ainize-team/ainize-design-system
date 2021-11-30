@@ -95,4 +95,7 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         medium: number;
         bold: number;
     };
+    transitions: {
+        button: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
