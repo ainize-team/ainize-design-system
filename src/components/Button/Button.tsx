@@ -18,6 +18,7 @@ const StyledButton = styled('button', {
     type: {
       primary: {
         background: '$violet150',
+        transition: '$button',
         '&:hover': {
           background: '$violet200',
         },
@@ -25,6 +26,7 @@ const StyledButton = styled('button', {
       secondary: {
         color: '$text2',
         background: '$gray30-a4',
+        transition: '$button',
         '&:hover': {
           color: '$text1',
           background: '$gray30-a8',
@@ -33,6 +35,7 @@ const StyledButton = styled('button', {
       outlined: {
         color: '$text2',
         border: '1px solid $gray50',
+        transition: '$button',
         '&:hover': {
           color: '$violet150',
           borderColor: '$violet100',
