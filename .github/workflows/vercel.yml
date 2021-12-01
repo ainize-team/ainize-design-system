@@ -1,0 +1,27 @@
+name: example - basic auth
+on:
+  push:
+    branches:
+      - master
+  pull_request_target:
+
+jobs:
+  vercel-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        id: now-deployment-staging
+        if: github.event_name == 'pull_request_target'
+        with:
+          vercel-token: M1gAtgPCToHXxGib9wg3CDbH
+          vercel-org-id: team_jJgHU2iAJK5hA8LuD7mTbJFb
+          vercel-project-id: prj_Z60p2nEQk3Rv4BKA0LVqRqK1i2wj
+      - uses: ./
+        id: now-deployment-production
+        if: github.event_name == 'push'
+        with:
+          vercel-token: M1gAtgPCToHXxGib9wg3CDbH
+          vercel-org-id: team_jJgHU2iAJK5hA8LuD7mTbJFb
+          vercel-project-id: prj_Z60p2nEQk3Rv4BKA0LVqRqK1i2wj
+          vercel-args: '--prod'
