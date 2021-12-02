@@ -61,6 +61,5 @@ export var Text = styled('span', {
     defaultVariants: {
         size: 'basic',
         weight: 'regular',
-        color: 1,
     },
 });
