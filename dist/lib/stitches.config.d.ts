@@ -2,8 +2,46 @@
 export declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -72,28 +110,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(type: Type, ...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -107,10 +124,50 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -179,34 +236,51 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -275,28 +349,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>(...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").JSXElementConstructor<any> | import("react").ExoticComponent<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -310,7 +363,9 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, CSS>, globalCss: <Styles extends {
     [K: string]: any;
 }>(...styles: ({
@@ -318,8 +373,46 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     '@font-face'?: unknown;
 } & { [K in keyof Styles]: K extends "@import" ? string | string[] : K extends "@font-face" ? import("@stitches/react/types/css").AtRule.FontFace | import("@stitches/react/types/css").AtRule.FontFace[] : K extends `@keyframes ${string}` ? {
     [x: string]: import("@stitches/react/types/css-util").CSS<{
-        bp1: "(min-width: 840px)";
+        bp0: "(min-width: 1024px)";
+        bp1: "(min-width: 760px)";
+        bp2: "(min-width: 440px)";
     }, {
+        fonts: {
+            montserrat: string;
+            roboto: string;
+            mulish: string;
+        };
+        fontSizes: {
+            jumbo: string;
+            h1: string;
+            h2: string;
+            h3: string;
+            h4: string;
+            basic: string;
+            p: string;
+            label: string;
+        };
+        fontWeights: {
+            regular: string;
+            medium: string;
+            bold: string;
+        };
+        lineHeights: {
+            jumbo: number;
+            h1: number;
+            h2: number;
+            h3: number;
+            basic: number;
+            h4: number;
+            p: number;
+            label: number;
+        };
+        zIndices: {
+            max: number;
+        };
+        transitions: {
+            button: string;
+        };
         colors: {
             text1: string;
             text2: string;
@@ -388,33 +481,50 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray200: string;
             gray250: string;
             gray300: string;
-        };
-        fonts: {
-            montserrat: string;
-            roboto: string;
-        };
-        fontSizes: {
-            label: string;
-            p: string;
-            basic: string;
-            h4: string;
-            h3: string;
-            h2: string;
-            h1: string;
-            jumbo: string;
-        };
-        fontWeights: {
-            regular: number;
-            medium: number;
-            bold: number;
-        };
-        transitions: {
-            button: string;
+            body: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -483,33 +593,50 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{
-        bp1: "(min-width: 840px)";
+        bp0: "(min-width: 1024px)";
+        bp1: "(min-width: 760px)";
+        bp2: "(min-width: 440px)";
     }, {
+        fonts: {
+            montserrat: string;
+            roboto: string;
+            mulish: string;
+        };
+        fontSizes: {
+            jumbo: string;
+            h1: string;
+            h2: string;
+            h3: string;
+            h4: string;
+            basic: string;
+            p: string;
+            label: string;
+        };
+        fontWeights: {
+            regular: string;
+            medium: string;
+            bold: string;
+        };
+        lineHeights: {
+            jumbo: number;
+            h1: number;
+            h2: number;
+            h3: number;
+            basic: number;
+            h4: number;
+            p: number;
+            label: number;
+        };
+        zIndices: {
+            max: number;
+        };
+        transitions: {
+            button: string;
+        };
         colors: {
             text1: string;
             text2: string;
@@ -578,28 +705,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray200: string;
             gray250: string;
             gray300: string;
-        };
-        fonts: {
-            montserrat: string;
-            roboto: string;
-        };
-        fontSizes: {
-            label: string;
-            p: string;
-            basic: string;
-            h4: string;
-            h3: string;
-            h2: string;
-            h1: string;
-            jumbo: string;
-        };
-        fontWeights: {
-            regular: number;
-            medium: number;
-            bold: number;
-        };
-        transitions: {
-            button: string;
+            body: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {}>;
 }) => {
@@ -609,6 +715,42 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     className: string;
     selector: string;
 } & {
+    fonts: {
+        montserrat: import("@stitches/react/types/theme").Token<"montserrat", string, "fonts", "ainize">;
+        roboto: import("@stitches/react/types/theme").Token<"roboto", string, "fonts", "ainize">;
+        mulish: import("@stitches/react/types/theme").Token<"mulish", string, "fonts", "ainize">;
+    };
+    fontSizes: {
+        jumbo: import("@stitches/react/types/theme").Token<"jumbo", string, "fontSizes", "ainize">;
+        h1: import("@stitches/react/types/theme").Token<"h1", string, "fontSizes", "ainize">;
+        h2: import("@stitches/react/types/theme").Token<"h2", string, "fontSizes", "ainize">;
+        h3: import("@stitches/react/types/theme").Token<"h3", string, "fontSizes", "ainize">;
+        h4: import("@stitches/react/types/theme").Token<"h4", string, "fontSizes", "ainize">;
+        basic: import("@stitches/react/types/theme").Token<"basic", string, "fontSizes", "ainize">;
+        p: import("@stitches/react/types/theme").Token<"p", string, "fontSizes", "ainize">;
+        label: import("@stitches/react/types/theme").Token<"label", string, "fontSizes", "ainize">;
+    };
+    fontWeights: {
+        regular: import("@stitches/react/types/theme").Token<"regular", string, "fontWeights", "ainize">;
+        medium: import("@stitches/react/types/theme").Token<"medium", string, "fontWeights", "ainize">;
+        bold: import("@stitches/react/types/theme").Token<"bold", string, "fontWeights", "ainize">;
+    };
+    lineHeights: {
+        jumbo: import("@stitches/react/types/theme").Token<"jumbo", string, "lineHeights", "ainize">;
+        h1: import("@stitches/react/types/theme").Token<"h1", string, "lineHeights", "ainize">;
+        h2: import("@stitches/react/types/theme").Token<"h2", string, "lineHeights", "ainize">;
+        h3: import("@stitches/react/types/theme").Token<"h3", string, "lineHeights", "ainize">;
+        basic: import("@stitches/react/types/theme").Token<"basic", string, "lineHeights", "ainize">;
+        h4: import("@stitches/react/types/theme").Token<"h4", string, "lineHeights", "ainize">;
+        p: import("@stitches/react/types/theme").Token<"p", string, "lineHeights", "ainize">;
+        label: import("@stitches/react/types/theme").Token<"label", string, "lineHeights", "ainize">;
+    };
+    zIndices: {
+        max: import("@stitches/react/types/theme").Token<"max", string, "zIndices", "ainize">;
+    };
+    transitions: {
+        button: import("@stitches/react/types/theme").Token<"button", string, "transitions", "ainize">;
+    };
     colors: {
         text1: import("@stitches/react/types/theme").Token<"text1", string, "colors", "ainize">;
         text2: import("@stitches/react/types/theme").Token<"text2", string, "colors", "ainize">;
@@ -677,30 +819,45 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200: import("@stitches/react/types/theme").Token<"gray200", string, "colors", "ainize">;
         gray250: import("@stitches/react/types/theme").Token<"gray250", string, "colors", "ainize">;
         gray300: import("@stitches/react/types/theme").Token<"gray300", string, "colors", "ainize">;
-    };
-    fonts: {
-        montserrat: import("@stitches/react/types/theme").Token<"montserrat", string, "fonts", "ainize">;
-        roboto: import("@stitches/react/types/theme").Token<"roboto", string, "fonts", "ainize">;
-    };
-    fontSizes: {
-        label: import("@stitches/react/types/theme").Token<"label", string, "fontSizes", "ainize">;
-        p: import("@stitches/react/types/theme").Token<"p", string, "fontSizes", "ainize">;
-        basic: import("@stitches/react/types/theme").Token<"basic", string, "fontSizes", "ainize">;
-        h4: import("@stitches/react/types/theme").Token<"h4", string, "fontSizes", "ainize">;
-        h3: import("@stitches/react/types/theme").Token<"h3", string, "fontSizes", "ainize">;
-        h2: import("@stitches/react/types/theme").Token<"h2", string, "fontSizes", "ainize">;
-        h1: import("@stitches/react/types/theme").Token<"h1", string, "fontSizes", "ainize">;
-        jumbo: import("@stitches/react/types/theme").Token<"jumbo", string, "fontSizes", "ainize">;
-    };
-    fontWeights: {
-        regular: import("@stitches/react/types/theme").Token<"regular", string, "fontWeights", "ainize">;
-        medium: import("@stitches/react/types/theme").Token<"medium", string, "fontWeights", "ainize">;
-        bold: import("@stitches/react/types/theme").Token<"bold", string, "fontWeights", "ainize">;
-    };
-    transitions: {
-        button: import("@stitches/react/types/theme").Token<"button", string, "transitions", "ainize">;
+        body: import("@stitches/react/types/theme").Token<"body", string, "colors", "ainize">;
     };
 }, createTheme: <Argument0 extends string | ({
+    fonts?: {
+        montserrat?: string | number | boolean | undefined;
+        roboto?: string | number | boolean | undefined;
+        mulish?: string | number | boolean | undefined;
+    } | undefined;
+    fontSizes?: {
+        jumbo?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+    } | undefined;
+    fontWeights?: {
+        regular?: string | number | boolean | undefined;
+        medium?: string | number | boolean | undefined;
+        bold?: string | number | boolean | undefined;
+    } | undefined;
+    lineHeights?: {
+        jumbo?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+    } | undefined;
+    zIndices?: {
+        max?: string | number | boolean | undefined;
+    } | undefined;
+    transitions?: {
+        button?: string | number | boolean | undefined;
+    } | undefined;
     colors?: {
         text1?: string | number | boolean | undefined;
         text2?: string | number | boolean | undefined;
@@ -769,28 +926,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200?: string | number | boolean | undefined;
         gray250?: string | number | boolean | undefined;
         gray300?: string | number | boolean | undefined;
-    } | undefined;
-    fonts?: {
-        montserrat?: string | number | boolean | undefined;
-        roboto?: string | number | boolean | undefined;
-    } | undefined;
-    fontSizes?: {
-        label?: string | number | boolean | undefined;
-        p?: string | number | boolean | undefined;
-        basic?: string | number | boolean | undefined;
-        h4?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        jumbo?: string | number | boolean | undefined;
-    } | undefined;
-    fontWeights?: {
-        regular?: string | number | boolean | undefined;
-        medium?: string | number | boolean | undefined;
-        bold?: string | number | boolean | undefined;
-    } | undefined;
-    transitions?: {
-        button?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -798,6 +934,42 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         [x: number]: string | number | boolean;
     };
 }), Argument1 extends string | ({
+    fonts?: {
+        montserrat?: string | number | boolean | undefined;
+        roboto?: string | number | boolean | undefined;
+        mulish?: string | number | boolean | undefined;
+    } | undefined;
+    fontSizes?: {
+        jumbo?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+    } | undefined;
+    fontWeights?: {
+        regular?: string | number | boolean | undefined;
+        medium?: string | number | boolean | undefined;
+        bold?: string | number | boolean | undefined;
+    } | undefined;
+    lineHeights?: {
+        jumbo?: string | number | boolean | undefined;
+        h1?: string | number | boolean | undefined;
+        h2?: string | number | boolean | undefined;
+        h3?: string | number | boolean | undefined;
+        basic?: string | number | boolean | undefined;
+        h4?: string | number | boolean | undefined;
+        p?: string | number | boolean | undefined;
+        label?: string | number | boolean | undefined;
+    } | undefined;
+    zIndices?: {
+        max?: string | number | boolean | undefined;
+    } | undefined;
+    transitions?: {
+        button?: string | number | boolean | undefined;
+    } | undefined;
     colors?: {
         text1?: string | number | boolean | undefined;
         text2?: string | number | boolean | undefined;
@@ -866,28 +1038,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         gray200?: string | number | boolean | undefined;
         gray250?: string | number | boolean | undefined;
         gray300?: string | number | boolean | undefined;
-    } | undefined;
-    fonts?: {
-        montserrat?: string | number | boolean | undefined;
-        roboto?: string | number | boolean | undefined;
-    } | undefined;
-    fontSizes?: {
-        label?: string | number | boolean | undefined;
-        p?: string | number | boolean | undefined;
-        basic?: string | number | boolean | undefined;
-        h4?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        jumbo?: string | number | boolean | undefined;
-    } | undefined;
-    fontWeights?: {
-        regular?: string | number | boolean | undefined;
-        medium?: string | number | boolean | undefined;
-        bold?: string | number | boolean | undefined;
-    } | undefined;
-    transitions?: {
-        button?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -900,9 +1051,47 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
 } & (Argument0 extends string ? import("@stitches/react/types/stitches").ThemeTokens<Argument1, "ainize"> : import("@stitches/react/types/stitches").ThemeTokens<Argument0, "ainize">), config: {
     prefix: "ainize";
     media: {
-        bp1: "(min-width: 840px)";
+        bp0: "(min-width: 1024px)";
+        bp1: "(min-width: 760px)";
+        bp2: "(min-width: 440px)";
     };
     theme: {
+        fonts: {
+            montserrat: string;
+            roboto: string;
+            mulish: string;
+        };
+        fontSizes: {
+            jumbo: string;
+            h1: string;
+            h2: string;
+            h3: string;
+            h4: string;
+            basic: string;
+            p: string;
+            label: string;
+        };
+        fontWeights: {
+            regular: string;
+            medium: string;
+            bold: string;
+        };
+        lineHeights: {
+            jumbo: number;
+            h1: number;
+            h2: number;
+            h3: number;
+            basic: number;
+            h4: number;
+            p: number;
+            label: number;
+        };
+        zIndices: {
+            max: number;
+        };
+        transitions: {
+            button: string;
+        };
         colors: {
             text1: string;
             text2: string;
@@ -971,28 +1160,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             gray200: string;
             gray250: string;
             gray300: string;
-        };
-        fonts: {
-            montserrat: string;
-            roboto: string;
-        };
-        fontSizes: {
-            label: string;
-            p: string;
-            basic: string;
-            h4: string;
-            h3: string;
-            h2: string;
-            h1: string;
-            jumbo: string;
-        };
-        fontWeights: {
-            regular: number;
-            medium: number;
-            bold: number;
-        };
-        transitions: {
-            button: string;
+            body: string;
         };
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;

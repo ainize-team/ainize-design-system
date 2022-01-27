@@ -4,10 +4,50 @@ declare const StyledButton: import("@stitches/react/types/styled-component").Sty
     disabled?: boolean | "true" | undefined;
     size?: "medium" | "small" | "large" | undefined;
 }, {
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -76,28 +116,7 @@ declare const StyledButton: import("@stitches/react/types/styled-component").Sty
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
 declare type StyleButtonProps = React.ComponentProps<typeof StyledButton>;

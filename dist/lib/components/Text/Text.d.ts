@@ -1,12 +1,52 @@
 export declare const Text: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: "label" | "p" | "basic" | "h4" | "h3" | "h2" | "h1" | "jumbo" | undefined;
+    size?: "jumbo" | "h1" | "h2" | "h3" | "h4" | "basic" | "p" | "label" | undefined;
     weight?: "regular" | "medium" | "bold" | undefined;
     color?: 1 | "1" | "2" | "3" | 2 | 3 | undefined;
 }, {
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, import("@stitches/react/types/css-util").CSS<{
-    bp1: "(min-width: 840px)";
+    bp0: "(min-width: 1024px)";
+    bp1: "(min-width: 760px)";
+    bp2: "(min-width: 440px)";
 }, {
+    fonts: {
+        montserrat: string;
+        roboto: string;
+        mulish: string;
+    };
+    fontSizes: {
+        jumbo: string;
+        h1: string;
+        h2: string;
+        h3: string;
+        h4: string;
+        basic: string;
+        p: string;
+        label: string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        jumbo: number;
+        h1: number;
+        h2: number;
+        h3: number;
+        basic: number;
+        h4: number;
+        p: number;
+        label: number;
+    };
+    zIndices: {
+        max: number;
+    };
+    transitions: {
+        button: string;
+    };
     colors: {
         text1: string;
         text2: string;
@@ -75,27 +115,7 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         gray200: string;
         gray250: string;
         gray300: string;
-    };
-    fonts: {
-        montserrat: string;
-        roboto: string;
-    };
-    fontSizes: {
-        label: string;
-        p: string;
-        basic: string;
-        h4: string;
-        h3: string;
-        h2: string;
-        h1: string;
-        jumbo: string;
-    };
-    fontWeights: {
-        regular: number;
-        medium: number;
-        bold: number;
-    };
-    transitions: {
-        button: string;
+        body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
+export default Text;

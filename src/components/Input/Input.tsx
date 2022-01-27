@@ -49,15 +49,36 @@ const StyledInput = styled('input', {
     size: 'medium',
   },
 });
+
+const InputWrapper = styled('div', {
+  position: 'relative',
+});
+const EndAdornmentWrapper = styled('div', {
+  position: 'absolute',
+  right: 10,
+  transform: 'translate(-50%, -50%);',
+  top: '50%',
+  defaultVariants: {
+    size: 'medium',
+  },
+});
+
 type StyledInputProps = React.ComponentProps<typeof StyledInput>;
 
 export type InputProps = StyledInputProps & {
-  size: string;
-}
+  size?: string;
+  width?: number | string;
+  endAdornment?: React.ReactNode;
+};
 
-export const Input = ({ size, ...props }: InputProps) => {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <StyledInput {...props} size={size} />;
+export const Input = ({ size, width, endAdornment, ...props }: InputProps) => {
+  return (
+    <InputWrapper css={{ width }}>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <StyledInput {...props} />
+      <EndAdornmentWrapper>{endAdornment}</EndAdornmentWrapper>
+    </InputWrapper>
+  );
 };
 
 export default Input;

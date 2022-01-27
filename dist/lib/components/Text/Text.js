@@ -63,3 +63,4 @@ export var Text = styled('span', {
         weight: 'regular',
     },
 });
+export default Text;

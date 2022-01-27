@@ -34,6 +34,7 @@ var StyledButton = styled('button', {
     alignItems: 'center',
     justifyContent: 'center',
     boxSizing: 'border-box',
+    width: 'fit-content',
     variants: {
         type: {
             primary: {
@@ -98,7 +99,9 @@ var StyledButton = styled('button', {
 });
 export function Button(_a) {
     var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
-    return (React.createElement(StyledButton, __assign({}, props),
+    return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    React.createElement(StyledButton, __assign({}, props),
         startIcon,
         children,
         endIcon));

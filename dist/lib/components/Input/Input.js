@@ -69,9 +69,22 @@ var StyledInput = styled('input', {
         size: 'medium',
     },
 });
+var InputWrapper = styled('div', {
+    position: 'relative',
+});
+var EndAdornmentWrapper = styled('div', {
+    position: 'absolute',
+    right: 10,
+    transform: 'translate(-50%, -50%);',
+    top: '50%',
+    defaultVariants: {
+        size: 'medium',
+    },
+});
 export var Input = function (_a) {
-    var size = _a.size, props = __rest(_a, ["size"]);
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    return React.createElement(StyledInput, __assign({}, props, { size: size }));
+    var size = _a.size, width = _a.width, endAdornment = _a.endAdornment, props = __rest(_a, ["size", "width", "endAdornment"]);
+    return (React.createElement(InputWrapper, { css: { width: width } },
+        React.createElement(StyledInput, __assign({}, props)),
+        React.createElement(EndAdornmentWrapper, null, endAdornment)));
 };
 export default Input;

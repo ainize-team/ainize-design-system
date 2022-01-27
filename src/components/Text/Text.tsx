@@ -1,4 +1,3 @@
-import React from 'react';
 import { styled } from '../../stitches.config';
 
 export const Text = styled('span', {
@@ -65,3 +64,5 @@ export const Text = styled('span', {
     weight: 'regular',
   },
 });
+
+export default Text;

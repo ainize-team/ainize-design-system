@@ -13,6 +13,7 @@ const StyledButton = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   boxSizing: 'border-box',
+  width: 'fit-content',
 
   variants: {
     type: {
@@ -86,12 +87,13 @@ export type ButtonProps = StyleButtonProps & {
 };
 
 export function Button({
-  startIcon,
-  endIcon,
-  children,
-  ...props
-}: ButtonProps) {
+                         startIcon,
+                         endIcon,
+                         children,
+                         ...props
+                       }: ButtonProps) {
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <StyledButton {...props}>
       {startIcon}
       {children}
