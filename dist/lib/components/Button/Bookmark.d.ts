@@ -1,7 +1,7 @@
-export declare const Text: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: "jumbo" | "h1" | "h2" | "h3" | "h4" | "basic" | "p" | "label" | undefined;
-    weight?: "regular" | "medium" | "bold" | undefined;
-    color?: 1 | "3" | "1" | "2" | 2 | 3 | undefined;
+import React from "react";
+declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
+    bookmarked?: boolean | "true" | "false" | undefined;
+    disabled?: boolean | "true" | undefined;
 }, {
     bp0: "(min-width: 1024px)";
     bp1: "(min-width: 760px)";
@@ -118,4 +118,11 @@ export declare const Text: import("@stitches/react/types/styled-component").Styl
         body: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>;
-export default Text;
+declare type StyleButtonProps = React.ComponentProps<typeof StyledButton>;
+export declare type ButtonProps = StyleButtonProps & {
+    value: number;
+    bookmarked?: boolean;
+    disabled?: boolean;
+};
+export declare function BookmarkButton({ value, bookmarked, disabled, ...props }: ButtonProps): JSX.Element;
+export {};

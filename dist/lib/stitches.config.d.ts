@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
+export declare const styled: <Type extends import("@stitches/react/types/util").Function | import("react").ComponentType<any> | keyof JSX.IntrinsicElements, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
     bp0: "(min-width: 1024px)";
