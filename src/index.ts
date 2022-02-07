@@ -12,3 +12,5 @@ export {
     DropdownMenuItem,
     DropdownMenuLabel,
 } from './components/Dropdown/Dropdown';
+export { Spinner } from './components/Spinner/Spinner';
+export { Switch } from './components/Switch/Switch';
