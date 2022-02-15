@@ -1,6 +1,6 @@
 {
   "name": "@ainize/design-system",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Design system for Ainize",
   "type": "module",
   "module": "./dist/lib/index.js",

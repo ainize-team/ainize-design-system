@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 declare const StyledInput: import("@stitches/react/types/styled-component").StyledComponent<"input", {
     danger?: boolean | "true" | undefined;
     size?: "medium" | "small" | undefined;

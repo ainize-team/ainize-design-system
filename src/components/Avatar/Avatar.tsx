@@ -20,11 +20,6 @@ const AvatarContainer = styled("div", {
   height: "40px",
 });
 
-const BadgeContainer = styled("div", {
-  position: "relative",
-  top: "-12px",
-});
-
 export interface AvatarProps {
   src: string;
   width: number;

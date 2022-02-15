@@ -24,7 +24,10 @@ const StyledButton = styled("button", {
   },
   fontSize: "$p",
   padding: "6px 8px",
-
+  "&:disabled": {
+    border: 0,
+    cursor: "unset",
+  },
   variants: {
     bookmarked: {
       true: {
@@ -34,15 +37,8 @@ const StyledButton = styled("button", {
         color: "$text2",
       },
     },
-    disabled: {
-      true: {
-        border: 0,
-        cursor: "unset",
-      },
-    },
   },
   defaultVariants: {
-    disabled: false,
     bookmarked: false,
   },
 });

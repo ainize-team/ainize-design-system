@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
     type?: "primary" | "secondary" | "outlined" | undefined;
-    disabled?: boolean | "true" | undefined;
     size?: "medium" | "small" | "large" | undefined;
 }, {
     bp0: "(min-width: 1024px)";
@@ -125,5 +124,5 @@ export declare type ButtonProps = StyleButtonProps & {
     endIcon?: React.ReactElement;
     disabled?: boolean;
 };
-export declare function Button({ startIcon, endIcon, children, ...props }: ButtonProps): JSX.Element;
+export declare function Button({ startIcon, endIcon, children, disabled, ...props }: ButtonProps): JSX.Element;
 export {};

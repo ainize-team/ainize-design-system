@@ -20,75 +20,102 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-import React from 'react';
-import { styled } from '../../stitches.config';
-var Tag = styled('div', {
-    all: 'unset',
-    display: 'inline-flex',
-    gap: '4px',
-    borderRadius: '6px',
-    cursor: 'normal',
-    fontFamily: '$roboto',
-    fontWeight: '$regular',
-    fontSize: '$label',
+import React from "react";
+import { styled } from "../../stitches.config";
+var Tag = styled("div", {
+    all: "unset",
+    display: "inline-flex",
+    gap: "4px",
+    borderRadius: "6px",
+    cursor: "normal",
+    fontFamily: "$roboto",
+    fontWeight: "$regular",
+    fontSize: "$label",
     lineHeight: 1.5,
-    alignItems: 'center',
+    alignItems: "center",
     variants: {
         size: {
             medium: {
-                padding: '2px 8px',
+                padding: "2px 8px",
             },
             small: {
-                padding: '0px 4px',
+                padding: "0px 4px",
             },
         },
     },
     defaultVariants: {
-        size: 'medium',
+        size: "medium",
     },
 });
 var StyledPrimaryTag = styled(Tag, {
-    border: 'none',
+    border: "none",
     variants: {
         color: {
             violet: {
-                backgroundColor: '$violet10',
-                color: '$violet200',
+                backgroundColor: "$violet10",
+                color: "$violet200",
             },
             gray: {
-                backgroundColor: '$gray10',
-                color: '$text2',
+                backgroundColor: "$gray10",
+                color: "$text2",
+            },
+        },
+        clickable: {
+            true: {
+                cursor: "pointer",
             },
         },
     },
+    compoundVariants: [
+        {
+            color: "violet",
+            clickable: true,
+            css: {
+                "&:hover": {
+                    backgroundColor: "$violet30",
+                },
+            },
+        },
+        {
+            color: "gray",
+            clickable: true,
+            css: {
+                "&:hover": {
+                    backgroundColor: "$gray30",
+                },
+            },
+        },
+    ],
     defaultVariants: {
-        color: 'violet',
+        color: "violet",
     },
 });
 export function PrimaryTag(_a) {
-    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
-    return (React.createElement(StyledPrimaryTag, __assign({}, props),
+    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, clickable = _a.clickable, props = __rest(_a, ["startIcon", "endIcon", "children", "clickable"]);
+    return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    React.createElement(StyledPrimaryTag, __assign({ clickable: clickable }, props),
         startIcon,
         children,
         endIcon));
 }
 var StyledOutlinedTag = styled(Tag, {
-    border: '1px solid',
-    backgroundColor: '$white',
+    border: "1px solid",
+    backgroundColor: "$white",
     variants: {
         color: {
             violet: {
-                borderColor: '$violet100',
-                color: '$violet100',
+                borderColor: "$violet100",
+                color: "$violet100",
             },
             gray: {
-                borderColor: '$gray100',
-                color: '$gray100',
+                borderColor: "$gray100",
+                color: "$gray100",
             },
         },
     },
     defaultVariants: {
-        color: 'violet',
+        color: "violet",
     },
 });
 export function OutlinedTag(_a) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 declare const StyledPrimaryTag: import("@stitches/react/types/styled-component").StyledComponent<import("@stitches/react/types/styled-component").StyledComponent<"div", {
     size?: "medium" | "small" | undefined;
 }, {
@@ -118,6 +118,7 @@ declare const StyledPrimaryTag: import("@stitches/react/types/styled-component")
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {}>>, {
     color?: "gray" | "violet" | undefined;
+    clickable?: boolean | "true" | undefined;
 }, {
     bp0: "(min-width: 1024px)";
     bp1: "(min-width: 760px)";
@@ -238,8 +239,9 @@ declare type StylePrimaryTagProps = React.ComponentProps<typeof StyledPrimaryTag
 export declare type PrimaryTagProps = StylePrimaryTagProps & {
     startIcon?: React.ReactElement;
     endIcon?: React.ReactElement;
+    clickable?: boolean;
 };
-export declare function PrimaryTag({ startIcon, endIcon, children, ...props }: PrimaryTagProps): JSX.Element;
+export declare function PrimaryTag({ startIcon, endIcon, children, clickable, ...props }: PrimaryTagProps): JSX.Element;
 declare const StyledOutlinedTag: import("@stitches/react/types/styled-component").StyledComponent<import("@stitches/react/types/styled-component").StyledComponent<"div", {
     size?: "medium" | "small" | undefined;
 }, {

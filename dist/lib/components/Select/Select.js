@@ -21,63 +21,63 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
-import ReactSelect from 'react-select';
-import { config } from '../../stitches.config';
+import React from "react";
+import ReactSelect from "react-select";
+import { config } from "../../stitches.config";
 var customStyles = {
-    container: function (provided, state) { return (__assign(__assign({}, provided), { width: state.selectProps.width, minHeight: 'unset' })); },
-    control: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { minHeight: 'unset' }), (state.selectProps.size === 'small'
+    container: function (provided, state) { return (__assign(__assign({}, provided), { width: state.selectProps.width, minHeight: "unset" })); },
+    control: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { minHeight: "unset" }), (state.selectProps.size === "small"
         ? {
-            padding: '4px 8px',
+            padding: "4px 8px",
         }
         : {
-            padding: '8px 12px',
-        })), { alignItems: 'flex-start', gap: '8px', boxShadow: 'unset', ':focus-within': {
+            padding: "8px 12px",
+        })), { alignItems: "flex-start", gap: "8px", boxShadow: "unset", ":focus-within": {
             border: state.selectProps.isError
                 ? "2px solid " + config.theme.colors.red100
                 : "2px solid " + config.theme.colors.violet100,
-            borderRadius: '4px',
+            borderRadius: "4px",
         } })); },
-    input: function (provided, state) { return (__assign(__assign(__assign({}, provided), { margin: 'unset' }), (state.selectProps.size === 'small'
+    input: function (provided, state) { return (__assign(__assign(__assign({}, provided), { margin: "unset" }), (state.selectProps.size === "small"
         ? {
-            height: '20px',
+            height: "20px",
         }
         : {
-            height: '24px',
+            height: "24px",
         }))); },
-    option: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { display: 'flex', alignItems: 'center', fontFamily: 'roboto, sans-serif' }), (state.selectProps.size === 'small'
+    option: function (provided, state) { return (__assign(__assign(__assign(__assign({}, provided), { display: "flex", alignItems: "center", fontFamily: "roboto, sans-serif" }), (state.selectProps.size === "small"
         ? {
-            fontSize: '0.75rem',
-            lineHeight: '16px',
+            fontSize: "0.75rem",
+            lineHeight: "16px",
         }
         : {
-            fontSize: '1rem',
-            lineHeight: '24px',
+            fontSize: "1rem",
+            lineHeight: "24px",
         })), { 
         // eslint-disable-next-line no-nested-ternary
         backgroundColor: state.isFocused
-            ? 'hsla(214, 12%, 89%, .8)'
+            ? "hsla(214, 12%, 89%, .8)"
             : state.isSelected
-                ? 'hsla(214, 12%, 89%, .4)'
-                : 'white', '&:hover': {
-            cursor: 'pointer',
-            backgroundColor: 'hsla(214, 12%, 89%, .8)',
-        }, '&:clicked': {
-            backgroundColor: 'hsla(214, 12%, 89%, .8)',
+                ? "hsla(214, 12%, 89%, .4)"
+                : "white", "&:hover": {
+            cursor: "pointer",
+            backgroundColor: "hsla(214, 12%, 89%, .8)",
+        }, "&:clicked": {
+            backgroundColor: "hsla(214, 12%, 89%, .8)",
         }, color: config.theme.colors.text1 })); },
-    valueContainer: function (provided, state) { return (__assign(__assign({}, provided), { height: state.selectProps.size === 'small' ? '20px' : '24px', padding: 'unset' })); },
-    singleValue: function (provided, state) { return (__assign(__assign({}, provided), { fontFamily: 'roboto, sans-serif', color: config.theme.colors.text1, margin: 'unset', fontSize: state.selectProps.size === 'small' ? '0.75rem' : '1rem', lineHeight: state.selectProps.size === 'small' ? '16px' : '24px' })); },
+    valueContainer: function (provided, state) { return (__assign(__assign({}, provided), { height: state.selectProps.size === "small" ? "20px" : "24px", padding: "unset" })); },
+    singleValue: function (provided, state) { return (__assign(__assign({}, provided), { fontFamily: "roboto, sans-serif", color: config.theme.colors.text1, margin: "unset", fontSize: state.selectProps.size === "small" ? "0.75rem" : "1rem", lineHeight: state.selectProps.size === "small" ? "16px" : "24px" })); },
     dropdownIndicator: function () { return ({
-        all: 'unset',
-        display: 'flex',
-        alignItems: 'flex-start',
-        color: 'hsl(208, 6%, 54%)',
+        all: "unset",
+        display: "flex",
+        alignItems: "flex-start",
+        color: "hsl(208, 6%, 54%)",
     }); },
     indicatorsContainer: function () { return ({
-        all: 'unset',
+        all: "unset",
     }); },
     indicatorSeparator: function () { return ({
-        display: 'none',
+        display: "none",
     }); },
 };
 // export function Select({...props}: StyleSelectProps) {

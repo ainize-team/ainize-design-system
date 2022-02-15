@@ -14,10 +14,6 @@ var StyledAvatar = styled(AvatarPrimitive.Root, {
 var AvatarContainer = styled("div", {
     height: "40px",
 });
-var BadgeContainer = styled("div", {
-    position: "relative",
-    top: "-12px",
-});
 export var Avatar = function (_a) {
     var src = _a.src, width = _a.width, height = _a.height, css = _a.css;
     return (React.createElement(AvatarContainer, null,

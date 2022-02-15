@@ -1,65 +1,72 @@
-import React from 'react';
-import { styled } from '../../stitches.config';
+import React from "react";
+import { styled } from "../../stitches.config";
 
-const StyledInput = styled('input', {
-  fontFamily: '$roboto',
-  outline: 'none',
-  boxSizing: 'border-box',
+const StyledInput = styled("input", {
+  fontFamily: "$roboto",
+  outline: "none",
+  boxSizing: "border-box",
   borderRadius: 4,
-  border: '2px solid $line',
-  color: '$text1',
-  width: '100%',
+  border: "2px solid $line",
+  color: "$text1",
+  display: "inline-flex",
+  flex: 1,
+  width: "100%",
 
-  '&:focus': {
-    border: '2px solid $violet100',
+  "&::placeholder": {
+    color: "#BDBDBD",
   },
-  '&:hover': {
-    border: '2px solid $violet150',
+  "&:focus": {
+    border: "2px solid $violet100",
   },
-  '&:disabled': {
-    border: '2px solid $line',
-    color: '$text3',
+  "&:hover": {
+    border: "2px solid $violet150",
+  },
+  "&:disabled": {
+    border: "2px solid $line",
+    color: "$text3",
   },
   variants: {
     danger: {
       true: {
-        border: '2px solid $red100',
-        '&:hover': {
-          border: '2px solid $red150',
+        border: "2px solid $red100",
+        "&:hover": {
+          border: "2px solid $red150",
         },
-        '&:focus': {
-          border: '2px solid $red100',
+        "&:focus": {
+          border: "2px solid $red100",
         },
       },
     },
     size: {
       medium: {
-        padding: '8px 12px',
-        fontSize: '$basic',
+        padding: "8px 12px",
+        fontSize: "$basic",
         lineHeight: 1.5,
       },
       small: {
-        padding: '6px 8px',
-        fontSize: '$label',
-        lineHeight: '16px',
+        padding: "6px 8px",
+        fontSize: "$label",
+        lineHeight: "16px",
       },
     },
   },
   defaultVariants: {
-    size: 'medium',
+    size: "medium",
   },
 });
 
-const InputWrapper = styled('div', {
-  position: 'relative',
+const InputWrapper = styled("div", {
+  position: "relative",
+  width: "inherit",
+  flex: 1,
 });
-const EndAdornmentWrapper = styled('div', {
-  position: 'absolute',
+const EndAdornmentWrapper = styled("div", {
+  position: "absolute",
   right: 10,
-  transform: 'translate(-50%, -50%);',
-  top: '50%',
+  transform: "translate(-50%, -50%);",
+  top: "50%",
   defaultVariants: {
-    size: 'medium',
+    size: "medium",
   },
 });
 

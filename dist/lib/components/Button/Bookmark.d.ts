@@ -1,7 +1,6 @@
 import React from "react";
 declare const StyledButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
     bookmarked?: boolean | "true" | "false" | undefined;
-    disabled?: boolean | "true" | undefined;
 }, {
     bp0: "(min-width: 1024px)";
     bp1: "(min-width: 760px)";
